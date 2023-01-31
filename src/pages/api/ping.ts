@@ -1,17 +1,27 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-import connection from '../../UtilsApi/DB/database'
+import prisma from '../../../lib/prisma'
 
 type Data = {
-  ping: []
+  ping: object
 }
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  const response = await connection.query('SELECT * FROM users')
+  const { method } = req
+  const { body } = req
 
-  return res.json({
-    ping: response.rows,
-  })
+  switch (method) {
+    case 'POST':
+      const ping = await prisma.users.create({
+        data: body,
+      })
+
+      res.status(200).json({ ping })
+      break
+    default:
+      res.setHeader('Allow', ['POST'])
+      res.status(405).end(`Method ${method} Not Allowed`)
+  }
 }

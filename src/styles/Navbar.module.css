@@ -1,0 +1,20 @@
+.navbar {
+  background-color: #220b68;
+  color: #fff;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.item {
+  min-width: 33%;
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  gap: 1rem;
+}
