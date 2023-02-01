@@ -1,20 +1,94 @@
-.navbar {
-  background-color: #220b68;
-  color: #fff;
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0 1rem;
-  width: 100%;
-}
-
-.item {
-  min-width: 33%;
-  display: flex;
-  justify-content: center;
-}
-
 .menu {
   gap: 1rem;
+}
+
+.navbar {
+  padding: 0 0;
+  background-color: #220b68;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 2rem;
+  height: 4rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  transition: width 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+}
+
+.navbar.active {
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  top: none;
+  width: 100vw;
+  height: 90vh;
+}
+
+.logo {
+  max-width: 20%;
+  display: flex;
+  transition: 0.3s;
+  justify-content: left;
+  z-index: 3;
+}
+.item {
+  display: none;
+}
+.hamburger {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hamburger:active {
+  transform: scale(0.85);
+}
+
+@media (min-width: 600px) {
+  .navbar {
+    color: #fff;
+    padding: 0 0rem;
+  }
+
+  .navbar.active {
+    padding: 0 0;
+    background-color: #220b68;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 0rem;
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    transition: width 0.3s ease-in-out;
+    transition: height 0.3s ease-in-out;
+  } /* This handles if the user resizes the window to be bigger to don't remove the active class but to make it look like without it */
+
+  .item,
+  .logo {
+    min-width: 33%;
+    display: flex;
+    justify-content: center;
+  }
+  .hamburger {
+    display: none;
+  }
+
+  .menu {
+    gap: 2rem;
+    transition: 0.3s;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu {
+    gap: 5rem;
+  }
 }
