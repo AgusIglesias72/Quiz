@@ -1,12 +1,12 @@
 .menu {
-  gap: 1rem;
+  gap: 5rem;
 }
 
 .navbar {
   padding: 0 0;
+  color: #fff;
   background-color: #220b68;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   width: 100%;
   padding: 0 2rem;
@@ -31,26 +31,64 @@
 .logo {
   max-width: 20%;
   display: flex;
+  align-items: center;
   transition: 0.3s;
   justify-content: left;
   z-index: 3;
 }
+
 .item {
   display: none;
 }
+
 .hamburger {
   cursor: pointer;
   transition: 0.3s;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
 
 .hamburger:active {
   transform: scale(0.85);
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
+  .logo {
+    position: fixed;
+    top: -0.5rem;
+    left: 1rem;
+    z-index: 3;
+  }
+  .active .item {
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .active .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 8rem 0rem;
+    height: 100%;
+    gap: 3rem;
+    transition: 0.3s;
+  }
+
+  .active .account {
+    position: relative;
+    bottom: 1rem;
+    right: 0rem;
+  }
+}
+
+@media (min-width: 601px) {
   .navbar {
-    color: #fff;
     padding: 0 0rem;
+    align-items: center;
   }
 
   .navbar.active {
@@ -77,6 +115,15 @@
     display: flex;
     justify-content: center;
   }
+
+  .active .item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    /* justify-content: flex-start; */
+    transition: 0.3s;
+  }
+
   .hamburger {
     display: none;
   }

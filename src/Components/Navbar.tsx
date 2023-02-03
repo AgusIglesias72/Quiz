@@ -62,14 +62,12 @@ export default function Navbar() {
     <OutsideAlerter classReference={styles.active}>
       <div className={styles.navbar} id="navbar">
         <div className={styles.logo}>
-          {/* <Link href="/"> */}
           <Image
             src="/exquizit.svg"
             alt="Vercel Logo"
             width={360}
             height={80}
           />
-          {/* </Link> */}
         </div>
         <menu className={styles.item + ' ' + styles.menu}>
           {MENU_ITEMS.map((item, index) => (
@@ -78,7 +76,7 @@ export default function Navbar() {
             </Link>
           ))}
         </menu>
-        <div className={styles.item}>
+        <div className={styles.item + ' ' + styles.account}>
           <IconComponent />
         </div>
         <div className={styles.hamburger} onClick={activeMenu}>
