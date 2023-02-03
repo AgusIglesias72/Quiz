@@ -2,8 +2,11 @@ import styles from '../styles/Navbar.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useSession } from 'next-auth/react'
-import { getServerSession } from 'next-auth/next'
-import { authOptions } from '../pages/api/auth/[...nextauth]'
+// I have an issue here. When doing SSR to get the Session, I get a 'module 'v8' not found' error I couldn't fix.
+// This results in a micro delay in session data. Not big deal, but I would like to fix it.
+// Next two imports are the ones I used in the SSR solution, same as getServerSideProps at the bottom
+// import { getServerSession } from 'next-auth/next'
+// import { authOptions } from '../pages/api/auth/[...nextauth]'
 import { IconButton, Tooltip } from '@mui/material'
 import OutsideAlerter from '../Hooks/useOutsideAlert'
 
@@ -92,12 +95,12 @@ export default function Navbar() {
   )
 }
 
-export async function getServerSideProps(context: any) {
-  const session = await getServerSession(context.req, context.res, authOptions)
+// export async function getServerSideProps(context: any) {
+//   const session = await getServerSession(context.req, context.res, authOptions)
 
-  return {
-    props: {
-      session,
-    },
-  }
-}
+//   return {
+//     props: {
+//       session,
+//     },
+//   }
+// }
