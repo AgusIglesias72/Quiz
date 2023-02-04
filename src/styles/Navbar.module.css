@@ -25,7 +25,7 @@
   align-items: right;
   top: none;
   width: 100vw;
-  height: 90vh;
+  height: 60vh;
 }
 
 .logo {
@@ -80,7 +80,7 @@
 
   .active .account {
     position: relative;
-    bottom: 1rem;
+    bottom: 4rem;
     right: 0rem;
   }
 }

@@ -30,7 +30,7 @@ export default function Navbar() {
 
   const IconComponent = () => {
     const redirectTo = !session ? '/api/auth/signin' : '/profile'
-    const toolmessage = !session ? 'Iniciar Sesión' : 'Mi Cuenta'
+    const toolmessage = !session ? 'Sign In' : 'My Account'
     const imageUrl = session ? session?.user?.image : '/account.svg'
 
     const imageStyle = session

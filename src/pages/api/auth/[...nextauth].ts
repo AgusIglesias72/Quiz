@@ -3,6 +3,8 @@ import GithubProvider from 'next-auth/providers/github'
 import GoogleProvider from 'next-auth/providers/google'
 import DiscordProvider from 'next-auth/providers/discord'
 import type { NextAuthOptions } from 'next-auth'
+import { PrismaAdapter } from '@next-auth/prisma-adapter'
+import client from '../../../../lib/prisma'
 
 const {
   GOOGLE_CLIENT_SECRET,
@@ -16,7 +18,7 @@ const {
 
 export const authOptions: NextAuthOptions = {
   secret: NEXTAUTH_SECRET as string,
-
+  adapter: PrismaAdapter(client),
   providers: [
     GithubProvider({
       clientId: GITHUB_CLIENT_ID as string,
