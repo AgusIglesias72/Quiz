@@ -14,7 +14,7 @@ export default async function handler(
 
   switch (method) {
     case 'POST':
-      const ping = await prisma.users.create({
+      const ping = await prisma.user.create({
         data: body,
       })
 

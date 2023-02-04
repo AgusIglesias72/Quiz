@@ -35,4 +35,5 @@ yarn-error.log*
 *.tsbuildinfo
 
 # prisma
-prisma
+# prisma/schema.prisma
+# prisma/migrations
