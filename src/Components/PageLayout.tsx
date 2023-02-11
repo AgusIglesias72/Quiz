@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Navbar from './Navbar'
+import Footer from './Footer'
 
 export default function PageLayout({ children, title, description }) {
   return (
@@ -10,7 +11,14 @@ export default function PageLayout({ children, title, description }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main>{children}</main>
+      <main
+        style={{
+          marginTop: '4rem',
+        }}
+      >
+        {children}
+      </main>
+      <Footer />
     </>
   )
 }

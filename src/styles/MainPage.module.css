@@ -1,0 +1,62 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 1rem 0rem;
+  padding: 0rem 10vw;
+}
+
+.titleMessage a {
+  color: #027d8a;
+  text-decoration: none;
+}
+
+.titleMessage a:hover,
+.titleMessage a:focus,
+.titleMessage a:active {
+  text-decoration: underline;
+}
+
+.titleMessage {
+  line-height: 1.15;
+  font-size: 3rem;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.titleMessage,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 600px) {
+}
+
+@media (min-width: 768px) {
+  .mainContainer {
+    flex-direction: row;
+  }
+
+  .titleMessage {
+    width: 50%;
+    flex-direction: column;
+    padding: 0 0rem;
+    line-clamp: 3;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}

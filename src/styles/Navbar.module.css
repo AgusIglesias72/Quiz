@@ -1,15 +1,19 @@
 .menu {
-  gap: 5rem;
+  display: none;
+  gap: 4rem;
+}
+
+.account {
+  display: none;
 }
 
 .navbar {
-  padding: 0 0;
   color: #fff;
   background-color: #220b68;
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 0 2rem;
+  padding: 0 1rem;
   height: 4rem;
   position: fixed;
   top: 0;
@@ -25,7 +29,7 @@
   align-items: right;
   top: none;
   width: 100vw;
-  height: 60vh;
+  height: 70vh;
 }
 
 .logo {
@@ -35,10 +39,6 @@
   transition: 0.3s;
   justify-content: left;
   z-index: 3;
-}
-
-.item {
-  display: none;
 }
 
 .hamburger {
@@ -53,42 +53,38 @@
   transform: scale(0.85);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .logo {
     position: fixed;
     top: -0.5rem;
     left: 1rem;
     z-index: 3;
   }
-  .active .item {
-    transition: 0.3s;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
   .active .menu {
     display: flex;
     flex-direction: column;
+    position: absolute;
+    top: 4rem;
+    right: 1rem;
     align-items: flex-end;
-    justify-content: flex-start;
-    padding: 8rem 0rem;
-    height: 100%;
-    gap: 3rem;
+    justify-content: stretch;
     transition: 0.3s;
   }
 
   .active .account {
-    position: relative;
-    bottom: 4rem;
-    right: 0rem;
+    display: block;
+    position: absolute;
+    bottom: 1rem;
+    right: 0.5rem;
   }
 }
 
-@media (min-width: 601px) {
+@media (min-width: 769px) {
   .navbar {
-    padding: 0 0rem;
+    padding: 0 2rem;
     align-items: center;
+    justify-content: space-around;
+    width: 100%;
   }
 
   .navbar.active {
@@ -109,33 +105,36 @@
     transition: height 0.3s ease-in-out;
   } /* This handles if the user resizes the window to be bigger to don't remove the active class but to make it look like without it */
 
-  .item,
-  .logo {
-    min-width: 33%;
+  .menu {
     display: flex;
+    width: 100%;
     justify-content: center;
   }
 
-  .active .item {
+  .account {
+    display: block;
+    position: fixed;
+    top: 0.5rem;
+    right: 3rem;
+    z-index: 3;
+  }
+
+  .active .menu {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    /* justify-content: flex-start; */
     transition: 0.3s;
+    gap: 2rem;
+    transition: 0.3s;
+  }
+  .logo {
+    position: fixed;
+    top: -0.5rem;
+    left: 1rem;
+    z-index: 3;
   }
 
   .hamburger {
     display: none;
-  }
-
-  .menu {
-    gap: 2rem;
-    transition: 0.3s;
-  }
-}
-
-@media (min-width: 768px) {
-  .menu {
-    gap: 5rem;
   }
 }

@@ -9,29 +9,17 @@ import { useSession } from 'next-auth/react'
 // import { authOptions } from '../pages/api/auth/[...nextauth]'
 import { IconButton, Tooltip } from '@mui/material'
 import OutsideAlerter from '../Hooks/useOutsideAlert'
-
-const MENU_ITEMS = [
-  {
-    name: 'Home',
-    href: '/',
-  },
-  {
-    name: 'About',
-    href: '/about',
-  },
-  {
-    name: 'Contact',
-    href: '/contact',
-  },
-] // List of Menu Items Titles and its href. Used for all renderings
+import { MENU_ITEMS } from '../utils/menuItems'
 
 export default function Navbar() {
   const { data: session } = useSession()
 
   const IconComponent = () => {
-    const redirectTo = !session ? '/api/auth/signin' : '/profile'
-    const toolmessage = !session ? 'Sign In' : 'My Account'
-    const imageUrl = session ? session?.user?.image : '/account.svg'
+    const redirectTo: string = !session ? '/api/auth/signin' : '/profile'
+    const toolmessage: string = !session ? 'Sign In' : 'My Account'
+    const imageUrl: string | undefined | null = session
+      ? session?.user?.image
+      : '/account.svg'
 
     const imageStyle = session
       ? { borderRadius: '50%', cursor: 'pointer' }
@@ -72,14 +60,14 @@ export default function Navbar() {
             height={80}
           />
         </div>
-        <menu className={styles.item + ' ' + styles.menu}>
+        <menu className={styles.menu}>
           {MENU_ITEMS.map((item, index) => (
-            <Link key={index} href={item.href}>
+            <Link key={index} href={item.href} style={{ cursor: 'pointer' }}>
               {item.name}
             </Link>
           ))}
         </menu>
-        <div className={styles.item + ' ' + styles.account}>
+        <div className={styles.account}>
           <IconComponent />
         </div>
         <div className={styles.hamburger} onClick={activeMenu}>
