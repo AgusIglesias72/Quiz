@@ -33,11 +33,13 @@ const Testimonial = ({ image, name, text, position }) => {
 } // returns the card component for the testimonials
 
 export default function Testimonials() {
-  const [op, setOp] = useState([])
+  //   const [op, setOp] = useState([])
 
-  useEffect(() => {
-    return setOp(opinions.sort(() => Math.random() - 0.5))
-  }, [])
+  //   useEffect(() => {
+  //     return setOp(opinions.sort(() => Math.random() - 0.5))
+  //   }, [])
+
+  const op = opinions.sort(() => Math.random() - 0.5)
 
   return (
     <div className="flex flex-col items-center w-full gap-4 p-8 mb-8 md:flex-row md:mb-0 flex-between">
