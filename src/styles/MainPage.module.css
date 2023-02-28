@@ -20,24 +20,17 @@
 }
 
 .titleMessage {
-  line-height: 1.15;
+  line-height: 1;
   font-size: 3rem;
   width: 100%;
-  padding: 0 1rem;
-}
-
-.titleMessage,
-.description {
   text-align: center;
 }
 
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-@media (min-width: 600px) {
+.imageContainer {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 768px) {
@@ -50,13 +43,5 @@
     flex-direction: column;
     padding: 0 0rem;
     line-clamp: 3;
-    text-align: center;
-  }
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
   }
 }

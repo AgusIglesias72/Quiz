@@ -29,7 +29,7 @@
   align-items: right;
   top: none;
   width: 100vw;
-  height: 70vh;
+  height: 80vh;
 }
 
 .logo {
@@ -63,12 +63,10 @@
   .active .menu {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 4rem;
-    right: 1rem;
     align-items: flex-end;
-    justify-content: stretch;
+    margin-right: 0.5rem;
     transition: 0.3s;
+    gap: 5rem;
   }
 
   .active .account {
@@ -137,4 +135,9 @@
   .hamburger {
     display: none;
   }
+}
+
+.imageLogo {
+  width: 360px;
+  height: 5rem;
 }

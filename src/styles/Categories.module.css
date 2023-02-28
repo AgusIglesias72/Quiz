@@ -1,0 +1,13 @@
+.categoriesMain {
+  width: 100%;
+  margin: 5rem 0rem;
+}
+
+.categoryWrapper {
+  display: grid;
+  width: 95%;
+  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+  justify-items: center;
+}

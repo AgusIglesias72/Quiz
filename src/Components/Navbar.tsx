@@ -51,13 +51,14 @@ export default function Navbar() {
 
   return (
     <OutsideAlerter classReference={styles.active}>
-      <div className={styles.navbar} id="navbar">
+      <div className={styles.navbar}>
         <div className={styles.logo}>
           <Image
             src="/exquizit.svg"
-            alt="Vercel Logo"
+            alt="ExQuizIt logo"
             width={360}
             height={80}
+            className={styles.imageLogo}
           />
         </div>
         <menu className={styles.menu}>
