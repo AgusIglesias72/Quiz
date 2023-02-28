@@ -8,6 +8,7 @@ export default function MainPageGreen() {
         justifyContent: 'space-around',
         alignItems: 'center',
         width: '90%',
+        margin: 'auto',
         height: '100%',
         marginBottom: '2rem',
       }}
