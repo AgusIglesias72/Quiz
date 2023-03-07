@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export const Statistic = ({ ...props }) => {
   const { mail, name, image } = props
 
@@ -6,9 +8,11 @@ export const Statistic = ({ ...props }) => {
       <div className="grid gap-12 lg:gap-24 row-gap-8 lg:grid-cols-5">
         <div className="grid gap-8 lg:col-span-2 place-items-center text-center lg:place-items-start lg:text-left">
           <div>
-            <img
+            <Image
               className="w-30 h-30 rounded-full"
               src={image}
+              width={0}
+              height={30}
               alt="Rounded avatar"
             />
           </div>

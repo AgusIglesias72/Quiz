@@ -24,7 +24,6 @@ export default function Profile() {
               name={session.user?.name}
               image={session.user?.image}
             />
-            {/* <div className="w-full"> */}
             <div className="flex flex-row items-center justify-center md:w-2/3 lg:w-1/3 px-10 md:px-0 mx-auto gap-5 pb-10">
               <Link
                 href="/quizzes/play"
@@ -40,7 +39,6 @@ export default function Profile() {
               >
                 Sign Out
               </button>
-              {/* </div> */}
             </div>
           </>
         )}
@@ -55,7 +53,7 @@ export async function getServerSideProps(context: any) {
   if (!session) {
     return {
       redirect: {
-        destination: '/api/auth/signin',
+        destination: '/',
         permanent: false,
       },
     }
