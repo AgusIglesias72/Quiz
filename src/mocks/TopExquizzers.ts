@@ -1,5 +1,6 @@
 export const TopExquizzers = [
   {
+    id: 2,
     avatar:
       'https://lh3.googleusercontent.com/a/AEdFTp5sd0FOpGMU03nZ1AK55tGg5jGAWnThEGLOnYQA-g=s96-c',
     name: 'John Doe',
@@ -8,6 +9,7 @@ export const TopExquizzers = [
     score: 100,
   },
   {
+    id: 3,
     avatar:
       'https://lh3.googleusercontent.com/a/AEdFTp5sd0FOpGMU03nZ1AK55tGg5jGAWnThEGLOnYQA-g=s96-c',
     name: 'John Doe',
@@ -16,6 +18,7 @@ export const TopExquizzers = [
     score: 95,
   },
   {
+    id: 2,
     avatar:
       'https://lh3.googleusercontent.com/a/AEdFTp5sd0FOpGMU03nZ1AK55tGg5jGAWnThEGLOnYQA-g=s96-c',
     name: 'John Doe',
@@ -24,6 +27,7 @@ export const TopExquizzers = [
     score: 90,
   },
   {
+    id: 4,
     avatar:
       'https://lh3.googleusercontent.com/a/AEdFTp5sd0FOpGMU03nZ1AK55tGg5jGAWnThEGLOnYQA-g=s96-c',
     name: 'John Doe',
@@ -32,6 +36,7 @@ export const TopExquizzers = [
     score: 80,
   },
   {
+    id: 5,
     avatar:
       'https://lh3.googleusercontent.com/a/AEdFTp5sd0FOpGMU03nZ1AK55tGg5jGAWnThEGLOnYQA-g=s96-c',
     name: 'John Doe',
@@ -40,6 +45,7 @@ export const TopExquizzers = [
     score: 70,
   },
   {
+    id: 6,
     avatar:
       'https://lh3.googleusercontent.com/a/AEdFTp5sd0FOpGMU03nZ1AK55tGg5jGAWnThEGLOnYQA-g=s96-c',
     name: 'John Doe',
@@ -48,6 +54,7 @@ export const TopExquizzers = [
     score: 60,
   },
   {
+    id: 7,
     avatar:
       'https://lh3.googleusercontent.com/a/AEdFTp5sd0FOpGMU03nZ1AK55tGg5jGAWnThEGLOnYQA-g=s96-c',
     name: 'John Doe',

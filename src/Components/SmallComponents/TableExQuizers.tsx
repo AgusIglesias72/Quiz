@@ -24,7 +24,10 @@ export default function TableExQuizers() {
           </thead>
           <tbody>
             {TopExquizzers.map((item) => (
-              <tr className="border-b border-opacity-20 dark:border-gray-700 dark:bg-gray-900">
+              <tr
+                className="border-b border-opacity-20 dark:border-gray-700 dark:bg-gray-900"
+                key={item.id}
+              >
                 <td className="p-3 flex justify-center">
                   <img
                     className="w-10 h-10 rounded-full"
