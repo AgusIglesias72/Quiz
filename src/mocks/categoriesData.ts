@@ -1,49 +1,176 @@
 export const mockData = [
   {
     id: 1,
-    length: 10,
-    title: 'Banderas de Europa',
-    description: 'Lorem ipsum random text for the description of this Quiz',
+    image:
+      'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg',
     category: 'Paises',
-    difficulty: 'Easy',
-  },
-  {
-    id: 1,
-    length: 10,
-    title: 'Mundial 2022',
+    title: 'Banderas del Mundo',
     description: 'Lorem ipsum random text for the description of this Quiz',
-    category: 'Deporte',
-    difficulty: 'Hard',
+    author: 'John Doe',
+    quantity: 10,
+    level: 'Easy',
   },
   {
-    id: 1,
-    length: 10,
-    title: 'Capitales del Mundo',
-    description:
-      'Lorem ipsum random text for the description of this Quiz Lorem ipsum random text for the description of this Quiz Lorem ipsum random text for the description of this Quiz Lorem ipsum random text for the description of this Quiz ',
-    category: 'Geografía',
-    difficulty: 'Hard',
+    id: 2,
+    image:
+      'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg',
+    category: 'Paises',
+    title: 'Banderas del Mundo',
+    description: 'Lorem ipsum random text for the description of this Quiz',
+    author: 'John Doe',
+    quantity: 10,
+    level: 'Easy',
+  },
+  {
+    id: 3,
+
+    image:
+      'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg',
+    category: 'Paises',
+    title: 'Banderas del Mundo',
+    description: 'Lorem ipsum random text for the description of this Quiz',
+    author: 'John Doe',
+    level: 'Easy',
+    quantity: 10,
   },
   {
     id: 4,
-    description: 'Lorem ipsum random text for the description of this Quiz',
-    available: 15,
 
+    image:
+      'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg',
     category: 'Paises',
+    title: 'Banderas del Mundo',
+    description: 'Lorem ipsum random text for the description of this Quiz',
+    author: 'John Doe',
+    level: 'Easy',
+    quantity: 10,
   },
   {
     id: 5,
-    title: 'Test 2',
-    description: 'Lorem ipsum random text for the description of this Quiz',
-    available: 15,
 
+    image:
+      'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg',
     category: 'Paises',
+    title: 'Banderas del Mundo',
+    description: 'Lorem ipsum random text for the description of this Quiz',
+    level: 'Easy',
+    author: 'John Doe',
+    quantity: 10,
   },
   {
-    id: 6,
-    // title: 'Test 3',
-    description: 'Lorem ipsum random text for the description of this Quiz',
-    available: 15,
+    id: 1,
+    image:
+      'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg',
     category: 'Paises',
+    title: 'Banderas del Mundo',
+    description: 'Lorem ipsum random text for the description of this Quiz',
+    author: 'John Doe',
+    quantity: 10,
+    level: 'Easy',
+  },
+  {
+    id: 2,
+    image:
+      'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg',
+    category: 'Paises',
+    title: 'Banderas del Mundo',
+    description: 'Lorem ipsum random text for the description of this Quiz',
+    author: 'John Doe',
+    quantity: 10,
+    level: 'Easy',
+  },
+  {
+    id: 3,
+
+    image:
+      'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg',
+    category: 'Paises',
+    title: 'Banderas del Mundo',
+    description: 'Lorem ipsum random text for the description of this Quiz',
+    author: 'John Doe',
+    level: 'Easy',
+    quantity: 10,
+  },
+  {
+    id: 4,
+
+    image:
+      'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg',
+    category: 'Paises',
+    title: 'Banderas del Mundo',
+    description: 'Lorem ipsum random text for the description of this Quiz',
+    author: 'John Doe',
+    level: 'Easy',
+    quantity: 10,
+  },
+  {
+    id: 5,
+
+    image:
+      'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg',
+    category: 'Paises',
+    title: 'Banderas del Mundo',
+    description: 'Lorem ipsum random text for the description of this Quiz',
+    level: 'Easy',
+    author: 'John Doe',
+    quantity: 10,
+  },
+  {
+    id: 1,
+    image:
+      'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg',
+    category: 'Paises',
+    title: 'Banderas del Mundo',
+    description: 'Lorem ipsum random text for the description of this Quiz',
+    author: 'John Doe',
+    quantity: 10,
+    level: 'Easy',
+  },
+  {
+    id: 2,
+    image:
+      'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg',
+    category: 'Paises',
+    title: 'Banderas del Mundo',
+    description: 'Lorem ipsum random text for the description of this Quiz',
+    author: 'John Doe',
+    quantity: 10,
+    level: 'Easy',
+  },
+  {
+    id: 3,
+
+    image:
+      'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg',
+    category: 'Paises',
+    title: 'Banderas del Mundo',
+    description: 'Lorem ipsum random text for the description of this Quiz',
+    author: 'John Doe',
+    level: 'Easy',
+    quantity: 10,
+  },
+  {
+    id: 4,
+
+    image:
+      'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg',
+    category: 'Paises',
+    title: 'Banderas del Mundo',
+    description: 'Lorem ipsum random text for the description of this Quiz',
+    author: 'John Doe',
+    level: 'Easy',
+    quantity: 10,
+  },
+  {
+    id: 5,
+
+    image:
+      'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg',
+    category: 'Paises',
+    title: 'Banderas del Mundo',
+    description: 'Lorem ipsum random text for the description of this Quiz',
+    level: 'Easy',
+    author: 'John Doe',
+    quantity: 10,
   },
 ]

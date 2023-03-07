@@ -67,7 +67,7 @@ export default function Testimonials() {
   // const op = opinions.sort(() => Math.random() - 0.5)
 
   return (
-    <div className="flex flex-col items-center w-full gap-4 p-8 mb-8 md:flex-row md:mb-0 flex-between">
+    <div className="flex flex-col items-center w-full gap-4 p-8 my-0 md:flex-row md:my-4 flex-between">
       {opinions.slice(0, 3).map((opinion, index) => (
         <Testimonial
           key={index}

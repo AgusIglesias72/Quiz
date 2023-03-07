@@ -1,3 +1,4 @@
+import Gallery from './SmallComponents/Gallery'
 import InfoExquizit from './SmallComponents/InfoExquizit'
 import MainPageGreen from './SmallComponents/MainPageTW'
 import Testimonials from './SmallComponents/Testimonial'
@@ -9,6 +10,7 @@ export default function MainPage() {
       <MainPageGreen />
       <InfoExquizit />
       <Testimonials />
+      <Gallery />
     </>
   )
 }
